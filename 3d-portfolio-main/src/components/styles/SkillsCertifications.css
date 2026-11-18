@@ -1,0 +1,136 @@
+.skills-cert-section {
+  width: var(--cWidth);
+  max-width: 1300px;
+  margin: 80px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.skills-cert-section h2 {
+  font-size: 55px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.skills-cert-section h2 span {
+  color: var(--accentColor);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.skill-card {
+  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accentColor);
+  box-shadow: 0 10px 30px -10px rgba(94, 234, 212, 0.25);
+}
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.skill-card-icon {
+  font-size: 24px;
+}
+
+.skill-card h3 {
+  font-size: 19px;
+  font-weight: 600;
+  color: #f8fafc;
+  margin: 0;
+}
+
+.skill-badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-badge {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.skill-badge:hover {
+  background: rgba(94, 234, 212, 0.15);
+  border-color: var(--accentColor);
+  color: #ffffff;
+}
+
+/* Certifications Sub-Grid */
+.cert-section-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #f1f5f9;
+}
+
+.cert-grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  background: rgba(20, 29, 48, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 18px 20px;
+  border-left: 3px solid var(--accentColor);
+  transition: all 0.25s ease;
+}
+
+.cert-card:hover {
+  background: rgba(20, 29, 48, 0.85);
+  border-color: rgba(94, 234, 212, 0.6);
+  transform: translateX(4px);
+}
+
+.cert-card h4 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #f8fafc;
+  margin: 0 0 6px 0;
+}
+
+.cert-card p {
+  font-size: 13px;
+  color: #94a3b8;
+  margin: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .skills-cert-section h2 {
+    font-size: 38px;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .cert-grid-cards {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rishitha R Kumar - Resume</title>
+<style>
+  @page {
+    size: A4 portrait;
+    margin: 11mm 13mm 11mm 13mm;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    background-color: #ffffff;
+    font-size: 9.3pt;
+    line-height: 1.38;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .header {
+    text-align: center;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 7px;
+    margin-bottom: 9px;
+  }
+  .name {
+    font-size: 20pt;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #1e3a8a;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
+  .headline {
+    font-size: 9.8pt;
+    font-weight: 600;
+    color: #0284c7;
+    margin-bottom: 5px;
+    letter-spacing: 0.3px;
+  }
+  .contact-bar {
+    font-size: 8.7pt;
+    color: #475569;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .contact-bar a {
+    color: #1e3a8a;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .sep {
+    color: #94a3b8;
+    margin: 0 4px;
+  }
+
+  .section {
+    margin-bottom: 9px;
+  }
+  .section-title {
+    font-size: 10.4pt;
+    font-weight: 700;
+    color: #1e3a8a;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1.2px solid #cbd5e1;
+    padding-bottom: 2px;
+    margin-bottom: 6px;
+  }
+  .summary-text {
+    text-align: justify;
+    color: #334155;
+    font-size: 9.1pt;
+    line-height: 1.42;
+  }
+
+  .item {
+    margin-bottom: 7px;
+  }
+  .item:last-child {
+    margin-bottom: 0;
+  }
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+  .item-title {
+    font-size: 9.6pt;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .item-subtitle {
+    font-size: 9.2pt;
+    font-weight: 600;
+    color: #0284c7;
+  }
+  .item-date {
+    font-size: 8.7pt;
+    font-weight: 600;
+    color: #475569;
+    text-align: right;
+    white-space: nowrap;
+  }
+  .item-submeta {
+    font-size: 8.5pt;
+    color: #64748b;
+    margin-bottom: 2px;
+  }
+
+  ul.bullets {
+    list-style-type: disc;
+    margin-left: 16px;
+    margin-top: 2px;
+  }
+  ul.bullets li {
+    margin-bottom: 2.5px;
+    color: #334155;
+    font-size: 8.9pt;
+    line-height: 1.35;
+    text-align: justify;
+  }
+  ul.bullets li strong {
+    color: #0f172a;
+  }
+
+  .skill-group {
+    margin-bottom: 3.5px;
+    font-size: 8.9pt;
+    line-height: 1.35;
+    color: #334155;
+  }
+  .skill-label {
+    font-weight: 700;
+    color: #1e3a8a;
+    display: inline-block;
+    min-width: 170px;
+  }
+
+  .edu-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 3px 0;
+    border-bottom: 1px dotted #e2e8f0;
+  }
+  .edu-row:last-child {
+    border-bottom: none;
+  }
+  .edu-degree {
+    font-weight: 700;
+    color: #0f172a;
+    font-size: 9.1pt;
+  }
+  .edu-inst {
+    color: #475569;
+    font-size: 8.7pt;
+  }
+  .edu-meta {
+    font-weight: 600;
+    color: #1e3a8a;
+    font-size: 8.8pt;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  .cert-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3.5px 12px;
+    margin-top: 2px;
+  }
+  .cert-item {
+    font-size: 8.7pt;
+    color: #334155;
+    line-height: 1.32;
+    position: relative;
+    padding-left: 11px;
+  }
+  .cert-item::before {
+    content: "▪";
+    position: absolute;
+    left: 0;
+    color: #0284c7;
+    font-size: 8.5pt;
+  }
+
+  .page-2 {
+    page-break-before: always;
+    padding-top: 2px;
+  }
+</style>
+</head>
+<body>
+
+  <!-- ==================== PAGE 1 ==================== -->
+  <header class="header">
+    <h1 class="name">Rishitha R Kumar</h1>
+    <div class="headline">Aspiring Data Analyst &bull; Business Intelligence &bull; Power BI &bull; Python &bull; SQL</div>
+    <div class="contact-bar">
+      <span>📍 Shivamogga, Karnataka, India</span>
+      <span class="sep">|</span>
+      <span>📧 <a href="mailto:rishithar282004@gmail.com">rishithar282004@gmail.com</a></span>
+      <span class="sep">|</span>
+      <span>📞 <a href="tel:+918904355318">+91 8904355318</a></span>
+      <span class="sep">|</span>
+      <span>🔗 <a href="https://linkedin.com/in/rishitha-r-kumar">linkedin.com/in/rishitha-r-kumar</a></span>
+      <span class="sep">|</span>
+      <span>💻 <a href="https://github.com/rishitharkumar">github.com/rishitharkumar</a></span>
+    </div>
+  </header>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <section class="section">
+    <h2 class="section-title">Professional Summary</h2>
+    <p class="summary-text">
+      Results-driven <strong>B.E. graduate in Robotics & AI Engineering (CGPA: 8.73)</strong> and aspiring <strong>Data Analyst</strong> with hands-on internship experience across Data Analytics, Business Intelligence, and Healthcare Analytics. Proficient in <strong>Power BI, DAX, Power Query, Python (Pandas, NumPy), SQL (MySQL), Excel, and Tableau</strong>. Demonstrated expertise in exploratory data analysis (EDA), data cleaning, star-schema dimensional modeling, ETL pipeline standardization, and executive dashboard engineering. Proven ability to translate complex multi-source business datasets into actionable operational insights, interactive visual reports, and data storytelling frameworks that drive informed strategic decisions.
+    </p>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section class="section">
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skill-group">
+      <span class="skill-label">Data Visualization & BI:</span>
+      Power BI, DAX, Power Query, Tableau, Advanced MS Excel (Pivot Tables, Power Pivot, VLOOKUP, XLOOKUP)
+    </div>
+    <div class="skill-group">
+      <span class="skill-label">Programming & Querying:</span>
+      Python (Pandas, NumPy, Matplotlib, Seaborn), SQL (MySQL, DDL/DML, Window Functions, Complex Joins, Aggregations)
+    </div>
+    <div class="skill-group">
+      <span class="skill-label">Data Analytics & Engineering:</span>
+      Exploratory Data Analysis (EDA), Data Cleaning & Wrangling, Data Modelling (Star/Snowflake Schema), ETL Processes, Statistical Analysis
+    </div>
+    <div class="skill-group">
+      <span class="skill-label">Artificial Intelligence:</span>
+      Generative AI, Natural Language Processing (NLP), Computer Vision, OpenCV, Agricultural Image Processing
+    </div>
+    <div class="skill-group">
+      <span class="skill-label">IT Service Management & Tools:</span>
+      ServiceNow (Level 2 & Level 3 Support, Incident Management, SLA Tracking), Git, VS Code, CAD Modelling (Fusion 360)
+    </div>
+    <div class="skill-group">
+      <span class="skill-label">Professional Competencies:</span>
+      Analytical Thinking, Data Storytelling, Business Problem Solving, KPI Formulation, Critical Thinking, Cross-Functional Communication
+    </div>
+  </section>
+
+  <!-- INTERNSHIP EXPERIENCE -->
+  <section class="section">
+    <h2 class="section-title">Professional Internship Experience</h2>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Data Analyst Intern</span> &mdash; <span class="item-subtitle">Global Quest Technologies (GQT)</span>
+        </div>
+        <div class="item-date">Feb 2026 &ndash; Apr 2026</div>
+      </div>
+      <div class="item-submeta">Bengaluru / Remote, Karnataka, India</div>
+      <ul class="bullets">
+        <li>Conducted comprehensive <strong>Exploratory Data Analysis (EDA)</strong> on 10+ diverse business datasets using Python (Pandas) and SQL, uncovering key operational trends, anomalies, and performance drivers that enhanced data-driven decision-making.</li>
+        <li>Architected and delivered <strong>5+ interactive dashboards</strong> in Power BI and Tableau, automating recurring cross-departmental reporting workflows and reducing manual data compilation time across operational units.</li>
+        <li>Extracted, cleaned, and standardized multi-source datasets into structured analytical data models, delivering executive-ready insights and visualization summaries for business stakeholders.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Data Analyst Virtual Intern</span> &mdash; <span class="item-subtitle">Deloitte (Forage)</span>
+        </div>
+        <div class="item-date">Mar 2026</div>
+      </div>
+      <div class="item-submeta">Virtual Job Simulation</div>
+      <ul class="bullets">
+        <li>Completed rigorous end-to-end data analytics simulations encompassing data hygiene auditing, missing value treatment, relational data modeling, and visualization across 3 distinct business scenarios.</li>
+        <li>Designed structured corporate reporting frameworks and visual analytical dashboards to guide and improve simulated organizational decision-making efficiency.</li>
+        <li>Synthesized multi-dimensional analytical findings into strategic data storytelling presentations, communicating key takeaways clearly to non-technical stakeholders.</li>
+      </ul>
+    </div>
+
+    <div class="item">
+      <div class="item-header">
+        <div>
+          <span class="item-title">Power BI Intern</span> &mdash; <span class="item-subtitle">Cognifyz Technologies</span>
+        </div>
+        <div class="item-date">Jun 2025 &ndash; Jul 2025</div>
+      </div>
+      <div class="item-submeta">Remote, India</div>
+      <ul class="bullets">
+        <li>Developed <strong>4+ interactive Power BI dashboards</strong> integrating multi-source relational and tabular datasets, accelerating executive reporting turnaround time.</li>
+        <li>Standardized data preparation and transformation pipelines across 3 client projects using Power Query, eliminating manual reporting discrepancies and improving data consistency.</li>
+        <li>Authored dynamic DAX measures (YTD performance, variance calculations, conditional KPIs) and optimized report page responsive layouts for intuitive end-user navigation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==================== PAGE 2 ==================== -->
+  <div class="page-2">
+    <!-- PROJECTS -->
+    <section class="section">
+      <h2 class="section-title">Key Projects & Technical Initiatives</h2>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Hospital Patient Analytics Dashboard</span> &bull; <span class="item-subtitle">Power BI, DAX, Power Query, Healthcare Intelligence</span>
+          </div>
+          <div class="item-date">Healthcare Analytics</div>
+        </div>
+        <ul class="bullets">
+          <li>Architected a multi-page interactive healthcare analytics dashboard analyzing <strong>55,500+ patient records</strong> across admissions, treatments, departmental load, and billing.</li>
+          <li>Engineered advanced <strong>DAX measures</strong> to track Average Length of Stay (ALOS), Readmission Rates, Departmental Bed Utilization, and Revenue per Admission.</li>
+          <li>Built automated ETL pipelines in Power Query to clean unstructured medical records, creating a clean star-schema relational model with dynamic cross-filtering and drill-through capabilities.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Customer Sales Analytics Dashboard</span> &bull; <span class="item-subtitle">Power BI, DAX, Sales Intelligence</span>
+          </div>
+          <div class="item-date">Commercial Analytics</div>
+        </div>
+        <ul class="bullets">
+          <li>Designed an executive commercial sales dashboard featuring interactive KPI summary cards tracking <strong>Total Sales, Net Profit, Profit Margin %, and Product Count</strong>.</li>
+          <li>Constructed a cohesive visualization suite including monthly trend lines, regional bar charts, donut category distributions, and ribbon charts to analyze market rank shifts over time.</li>
+          <li>Implemented <strong>dynamic cross-filtering across 3 dimensions</strong> (geographic region, product category, and customer segment), giving sales leadership instant visibility into profitability drivers.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Google Play Store Analytics Dashboard</span> &bull; <span class="item-subtitle">Power BI, Python, Market Research</span>
+          </div>
+          <div class="item-date">Mobile App Analytics</div>
+        </div>
+        <ul class="bullets">
+          <li>Analyzed a catalog of <strong>10,000+ mobile applications</strong> evaluating monetization models (Free vs. Paid), genre adoption, user sentiment ratings, and install volume.</li>
+          <li>Constructed interactive treemaps, conversion funnels, and drill-down category charts surfacing granular market intelligence across <strong>30+ application categories</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">AI Robotics Vision Defect Detection System</span> &bull; <span class="item-subtitle">Python, OpenCV, Computer Vision, Industrial Automation</span>
+          </div>
+          <div class="item-date">Industrial AI</div>
+        </div>
+        <ul class="bullets">
+          <li>Engineered an automated optical inspection pipeline utilizing Python and OpenCV to detect surface defects, cracks, and casting irregularities on manufacturing lines.</li>
+          <li>Applied adaptive thresholding, morphological transformations, and contour analysis, substantially reducing manual inspection duration while increasing defect detection accuracy.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Agricultural Image Processing for Pest Detection</span> &bull; <span class="item-subtitle">Python, OpenCV, Image Processing</span>
+          </div>
+          <div class="item-date">AgriTech Vision</div>
+        </div>
+        <ul class="bullets">
+          <li>Developed an automated computer vision solution to detect crop foliage infestations and pest damage from high-resolution agricultural field imagery.</li>
+          <li>Utilized color-space segmentation (HSV), edge detection, and feature classification to quantify affected leaf area, minimizing the need for manual crop supervision.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Forced Convection Drying Optimization System</span> &bull; <span class="item-subtitle">Robotics & Applied Engineering</span>
+          </div>
+          <div class="item-date">Thermal & Control Systems</div>
+        </div>
+        <ul class="bullets">
+          <li>Optimized an automated areca nut drying system leveraging forced convection thermodynamic principles for uniform heat and airflow distribution.</li>
+          <li>Analyzed thermal gradient telemetry and moisture evaporation curves, successfully improving drying cycle efficiency and throughput.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section">
+      <h2 class="section-title">Education</h2>
+      <div class="edu-row">
+        <div>
+          <div class="edu-degree">Bachelor of Engineering (B.E.) &mdash; Robotics & Artificial Intelligence Engineering</div>
+          <div class="edu-inst">Jawaharlal Nehru New College of Engineering (JNNCE), Shivamogga, Karnataka</div>
+        </div>
+        <div class="edu-meta">
+          2022 &ndash; 2026<br>
+          <span style="color:#0284c7; font-weight:700;">CGPA: 8.73</span>
+        </div>
+      </div>
+      <div class="edu-row">
+        <div>
+          <div class="edu-degree">Pre-University Course (PUC) &mdash; Class XII (Science / PCMB)</div>
+          <div class="edu-inst">Adhichunchanagiri Independent PU College, Karnataka</div>
+        </div>
+        <div class="edu-meta">
+          2020 &ndash; 2022<br>
+          <span style="color:#0284c7; font-weight:700;">Score: 91.83%</span>
+        </div>
+      </div>
+      <div class="edu-row">
+        <div>
+          <div class="edu-degree">Secondary School Leaving Certificate (SSLC) &mdash; Class X</div>
+          <div class="edu-inst">Saandeepani English High School, Karnataka</div>
+        </div>
+        <div class="edu-meta">
+          2017 &ndash; 2020<br>
+          <span style="color:#0284c7; font-weight:700;">Score: 90.40%</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & HONORS -->
+    <section class="section">
+      <h2 class="section-title">Certifications & Honors</h2>
+      <div class="cert-grid">
+        <div class="cert-item"><strong>Academic Merit Award</strong> &mdash; Excellence in Engineering Studies</div>
+        <div class="cert-item"><strong>IBM Data Analytics with Python</strong> &mdash; Professional Credential</div>
+        <div class="cert-item"><strong>Power BI: Data & Analytics Workshop</strong> &mdash; Practical Workshop</div>
+        <div class="cert-item"><strong>Deloitte Data Analyst Virtual Internship</strong> &mdash; Forage Credential</div>
+        <div class="cert-item"><strong>Power BI Internship Certification</strong> &mdash; Cognifyz Technologies</div>
+        <div class="cert-item"><strong>Data Analyst Internship Completion</strong> &mdash; Global Quest Technologies</div>
+        <div class="cert-item"><strong>Introduction to Machine Learning</strong> &mdash; Foundational Certification</div>
+        <div class="cert-item"><strong>Robotics & Systems Knowledge:</strong> PLC Basics, Hydraulics & Pneumatics, CAD (Fusion 360)</div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>
